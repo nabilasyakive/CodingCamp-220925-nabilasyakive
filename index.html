@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - syakive</title>
+    <title>Portfolio - Syakive</title>
 
     <!-- CSS External -->
     <link rel="stylesheet" href="css/style.css">
@@ -22,7 +22,7 @@
 
         <!-- Navigation Menu -->
         <nav>
-            <ul class="flex h-[100%] items-center gap-[2px]">
+            <ul class="flex h-[100%] items-center gap-[2px] ">
                 <li><a class="border p-[8px] rounded" href="#home">Home</a></li>
                 <li><a class="border p-[8px] rounded" href="#profile">Profile</a></li>
                 <li><a class="border p-[8px] rounded" href="#portfolio">Portfolio</a></li>
@@ -36,26 +36,61 @@
     <!-- Main Content -->
     <main>
         <!-- Home Section -->
-        <section id="home" class="min-h-[100vh] flex flex-col justify-center items-center gap-[20px]">
-            <h1 class="text-[36px] font-bold">Welcome <span id="username"></span> to My Portfolio</h1>
-            <p class="text-[18px]">This is the home section of my portfolio website.</p>
-        </section>
+<section id="home" class="min-h-[100vh] flex flex-col justify-center items-center text-center px-4 bg-gradient-to-b from-sky-50 via-white to-sky-100">
+    <div class="max-w-3xl">
+        <h1 class="text-[36px] font-bold">Welcome <span id="username"></span> to My Portfolio</h1>
+        <p class="text-[42px] md:text-[56px] font-extrabold text-gray-800 leading-tight mb-4">
+            Hi, I’m <span class="text-sky-600">Nabila Syakive</span> 👋
+        <p class="text-[18px] md:text-[20px] text-gray-600 mb-6">
+            Information Technology Student | <span class="font-medium text-gray-800">Cybersecurity Enthusiast</span> | 
+            <span class="font-medium text-gray-800">Data Analyst</span>.  </p>
+        <p>Explore my works and get in touch with me.</p>
+    </div>
+</section>
+
 
         <hr>
 
         <!-- Profile Section -->
-        <section id="profile" class="min-h-[100vh] flex flex-col justify-center items-center gap-[20px]">
-            <h2 class="text-[30px] font-bold">Profile</h2>
-            <div class="max-w-[700px] text-center">
-                <img src="https://picsum.photos/200/200" alt="Profile Picture" class="rounded-full mx-auto mb-[20px]">
-                <p class="text-[18px] mb-[10px]">
-                    Halo, aku <span class="font-bold">Nabila Syakive</span> 👋  
-                    Mahasiswi Teknologi Informasi dengan minat di bidang keamanan siber dan analisis data.
-                </p>
-                <p class="text-[18px]">
-                    Aku terbiasa bekerja dengan <span class="italic">OWASP tools, analisis data, dan pembuatan dashboard</span>.
-                    Tujuanku adalah mengembangkan solusi teknologi yang aman, efisien, dan bermanfaat.
-                </p>
+<!-- Profile Section -->
+        <section id="profile" class="py-20 flex flex-col items-center bg-white relative">
+            <h2 class="text-4xl font-extrabold text-gray-900 mb-12 border-b-4 border-sky-500 pb-2">Profile</h2>
+            <div class="max-w-4xl px-4 flex flex-col md:flex-row items-center gap-10">
+                <div class="flex-shrink-0 relative">
+                    <img src="https://i.pinimg.com/736x/e5/1d/1d/e51d1d11a1c60db0c580954208e631be.jpg" 
+                        alt="Profile Picture" 
+                        class="w-64 h-64 object-cover rounded-full border-8 border-white shadow-xl transition duration-500 transform hover:scale-105 hover:shadow-2xl">
+                    <span class="absolute bottom-4 right-4 block h-5 w-5 rounded-full ring-4 ring-white bg-green-400" title="Available for work"></span>
+                </div>
+
+                <div class="text-left md:w-2/3">
+                    <p class="text-xl mb-4 leading-relaxed">
+                        Hello! My name is <span class="font-bold text-sky-600">Nabila Syakive</span>, an Information Technology student with 
+                        a strong passion for <span class="italic font-medium">cybersecurity</span> and <span class="italic font-medium">data analysis</span>.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        I am experienced in working with <span class="font-medium">OWASP tools, data analytics, and dashboard development</span>.  
+                        My goal is to build secure, efficient, and impactful technology solutions for a better digital world.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8">
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-3 text-sky-700">⚙️ Technical Skills</h3>
+                            <ul class="space-y-1 text-base text-gray-700">
+                                <li><span class="font-medium">Programming:</span> PHP, Python, JavaScript</li>
+                                <li><span class="font-medium">Frameworks:</span> CodeIgniter, TensorFlow</li>
+                                <li><span class="font-medium">Database:</span> MySQL, PostgreSQL</li>
+                                <li><span class="font-medium">Cybersecurity:</span> OWASP ZAP, WSTG</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-3 text-sky-700">🎓 Education</h3>
+                            <p class="text-lg font-medium text-gray-800">Information Technology Student</p>
+                            <p class="text-base text-gray-600">UIN Ar-Raniry | 2021 - Present</p>
+                            <p class="mt-4 text-base text-gray-600 italic">Focusing on network security and big data.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -63,39 +98,90 @@
 
         <!-- Portfolio Section -->
 
-        <section id="portfolio" class="min-h-[100vh] flex flex-col justify-center items-center gap-[20px]">
-            <h2 class="text-[30px] font-bold">Portfolio</h2>
-            <p class="text-[18px]">This section showcases my projects and work.</p>
+<section id="portfolio" class="py-20 flex flex-col items-center bg-gray-50">
+            <h2 class="text-4xl font-extrabold text-gray-900 mb-12 border-b-4 border-sky-500 pb-2">Portfolio</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl px-4">
+                
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                    <img src="https://i.pinimg.com/736x/43/53/83/435383c2ecf74d63a4dfcea87b441918.jpg" alt="Project 1" class="w-full h-48 object-cover bg-gray-100 border-b">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl text-sky-700 mb-2">Syakive Kost 🏠</h3>
+                        <p class="text-gray-600 text-base mb-4 line-clamp-3">A boarding house booking application for students, workers, and individuals who need temporary accommodation. Built with CodeIgniter.</p>
+                        <a href="https://github.com/syakive/WebKDP" target="_blank" class="inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-800 transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12.586 4.586a2 2 0 112.828 2.828l-3.879 3.879a1 1 0 01-1.414 0l-3.879-3.879a2 2 0 112.828-2.828l3.879 3.879zM5.586 14.586a2 2 0 102.828 2.828l3.879-3.879a1 1 0 000-1.414l-3.879-3.879a2 2 0 10-2.828 2.828l3.879 3.879a1 1 0 001.414 0l-3.879-3.879z" clip-rule="evenodd" /></svg>
+                            GitHub Repository
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                    <img src="https://i.pinimg.com/736x/43/53/83/435383c2ecf74d63a4dfcea87b441918.jpg" alt="Project 2" class="w-full h-48 object-cover bg-gray-100 border-b">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl text-sky-700 mb-2">User Data Management System 📊</h3>
+                        <p class="text-gray-600 text-base mb-4 line-clamp-3">PHP and MySQL based CRUD project using Apache as a server for user data management (input, edit, delete, and save to database).</p>
+                        <a href="https://github.com/syakive/project-crud" target="_blank" class="inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-800 transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12.586 4.586a2 2 0 112.828 2.828l-3.879 3.879a1 1 0 01-1.414 0l-3.879-3.879a2 2 0 112.828-2.828l3.879 3.879zM5.586 14.586a2 2 0 102.828 2.828l3.879-3.879a1 1 0 000-1.414l-3.879-3.879a2 2 0 10-2.828 2.828l3.879 3.879a1 1 0 001.414 0l-3.879-3.879z" clip-rule="evenodd" /></svg>
+                            GitHub Repository
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                    <img src="https://i.pinimg.com/736x/43/53/83/435383c2ecf74d63a4dfcea87b441918.jpg" alt="Project 3" class="w-full h-48 object-cover bg-gray-100 border-b">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl text-sky-700 mb-2">Sentiment Analysis 🧠</h3>
+                        <p class="text-gray-600 text-base mb-4 line-clamp-3">Sentiment classification of Pinterest app user comments on Google Play Store using Indobert and Tensorflow.</p>
+                        <a href="https://colab.research.google.com/drive/17-mbPFohuvKQFTz7Xs6DOgxo7YGu7nu6?usp=sharing" target="_blank" class="inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-800 transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12.586 4.586a2 2 0 112.828 2.828l-3.879 3.879a1 1 0 01-1.414 0l-3.879-3.879a2 2 0 112.828-2.828l3.879 3.879zM5.586 14.586a2 2 0 102.828 2.828l3.879-3.879a1 1 0 000-1.414l-3.879-3.879a2 2 0 10-2.828 2.828l3.879 3.879a1 1 0 001.414 0l-3.879-3.879z" clip-rule="evenodd" /></svg>
+                            Google Colab Link
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
+
 
         <hr>
 
         <!-- Message Us Section -->
-        <section id="message-us" class="min-h-[100vh] flex flex-col justify-center items-center gap-[20px]">
-            <h2 class="text-[30px] font-bold">Message Us</h2>
-            <form>
-                <div class="mb-[10px]">
-                    <label for="name" class="block mb-[5px]">Name:</label>
-                    <input type="text" id="name" name="name" class="border p-[8px] rounded w-[300px]" required>
+        <section id="message-us" class="py-20 flex flex-col items-center bg-sky-50">
+            <h2 class="text-4xl font-extrabold text-gray-900 mb-12 border-b-4 border-sky-500 pb-2">Message Us 📧</h2>
+            <div class="max-w-md w-full px-4">
+                <form class="bg-white p-8 rounded-xl shadow-2xl space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name:</label>
+                        <input type="text" id="name" name="name" class="w-full border-gray-300 border-2 focus:border-sky-500 focus:ring-sky-500 rounded-lg p-3 transition duration-150" placeholder="Your Name" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email:</label>
+                        <input type="email" id="email" name="email" class="w-full border-gray-300 border-2 focus:border-sky-500 focus:ring-sky-500 rounded-lg p-3 transition duration-150" placeholder="your.email@example.com" required>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message:</label>
+                        <textarea id="message" name="message" class="w-full border-gray-300 border-2 focus:border-sky-500 focus:ring-sky-500 rounded-lg p-3 h-32 transition duration-150" placeholder="What's your project idea?" required></textarea>
+                    </div>
+                    <button type="button" onclick="validateForm()"
+                        class="w-full bg-sky-600 text-white font-semibold p-3 rounded-lg hover:bg-sky-700 transition duration-300 shadow-md">
+                        Send Message
+                    </button>
+                </form>
+
+                <div id="summaryBox" class="mt-8 border-t-4 border-sky-500 rounded-xl p-6 shadow-xl bg-white hidden">
+                    <h3 class="font-bold text-xl mb-3 text-sky-700">📋 Message Summary</h3>
+                    <div class="space-y-2 text-gray-700">
+                        <p><span class="font-semibold">Name:</span> <span id="summaryName" class="text-gray-800">-</span></p>
+                        <p><span class="font-semibold">Email:</span> <span id="summaryEmail" class="text-gray-800">-</span></p>
+                        <p><span class="font-semibold">Message:</span></p>
+                        <p id="summaryMessage" class="mt-1 p-3 bg-gray-100 rounded-lg border border-gray-200 italic text-gray-600">-</p>
+                    </div>
                 </div>
-                <div class="mb-[10px]">
-                    <label for="email" class="block mb-[5px]">Email:</label>
-                    <input type="email" id="email" name="email" class="border p-[8px] rounded w-[300px]" required>
-                </div>
-                <div class="mb-[10px]">
-                    <label for="message" class="block mb-[5px]">Message:</label>
-                    <textarea id="message" name="message" class="border p-[8px] rounded w-[300px] h-[100px]"
-                        required></textarea>
-                </div>
-                <button type="button" onclick="validateForm()"
-                    class="bg-blue-500 text-white p-[10px] rounded hover:bg-blue-600">Send</button>
-            </form>
+            </div>
         </section>
     </main>
 
     <!-- Footer Content -->
     <footer>
-        <p class="text-center p-[20px] bg-gray-200">© 2025 Yama's Portfolio. All rights reserved.</p>
+        <p class="text-center p-[20px] ">© 2025 Syakive's Portfolio. All rights reserved.</p>
     </footer>
 
     <!-- JavaScript External -->

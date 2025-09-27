@@ -23,12 +23,19 @@ function validateForm() {
     let email = document.getElementById("email").value;
     let message = document.getElementById("message").value;
 
-    /// Simple validation
+    /// Validation
     if (name === "" || email === "" || message === "") {
-        /// If any field is empty, show an alert
         alert("Please fill in all fields.");
     } else {
-        /// If all fields are filled, show a success message
+        // Tampilkan alert sukses
         alert(`Thanks, ${name}! Form submitted successfully!`);
+
+        // Masukkan data ke summary
+        document.getElementById("summaryName").textContent = name;
+        document.getElementById("summaryEmail").textContent = email;
+        document.getElementById("summaryMessage").textContent = message;
+
+        // Tampilkan box summary
+        document.getElementById("summaryBox").classList.remove("hidden");
     }
 }
